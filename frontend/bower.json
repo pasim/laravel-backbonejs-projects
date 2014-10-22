@@ -1,0 +1,20 @@
+{
+  "name": "Kosovo-app",
+  "version": "1.0.0",
+  "main": "./js/app/app.js",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt",
+    "js/lib"
+  ],
+  "private": true,
+  "dependencies": {
+    "jquery": "1.9",
+    "backbone": "~1.1.2",
+    "backbone-super": "~1.0.2",
+    "PreloadJS": "*",
+    "require": "*",
+    "jquery-ui": "~1.11.1",
+    "bootstrap": "~3.2.0"
+  }
+}
