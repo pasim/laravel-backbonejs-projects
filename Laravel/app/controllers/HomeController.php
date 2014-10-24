@@ -23,13 +23,22 @@ class HomeController extends BaseController {
 	public function showSomething()
 	{
 
-		$test = class_exists('SoapClient') ? "Done" : "NULL";
+		$id = rand(1,78);
+		$cities = DB::table('cities')->where('id', $id)->first();
 
-		$client = new SoapClient('http://graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php?wsdl');
-		$result = $client->LatLonListZipCode('71211');
+    $ct = explode(",", $cities->city);
+
+    var_dump($ct);
+
+    list($city,$state) = $ct;
+
+    $city = str_replace(" ", "_", $city);
+		$id = rand(1, 78);
+		$result = Weather::getHistoricalData($city, $state, '19770709');
+		var_dump($result['history']['observations']);
+		// dd($latLonList);
 
 
-		return View::make('something', array('test' => $test, 'result'=>$result, 'client'=>$client));
 	}
 
 }

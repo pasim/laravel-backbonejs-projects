@@ -1,0 +1,20 @@
+{
+    "name": "birthdays/weather",
+    "description": "",
+    "authors": [
+        {
+            "name": "Janis Janovskis",
+            "email": "janis.janovskis@passivemanagement.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Birthdays\\Weather": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}

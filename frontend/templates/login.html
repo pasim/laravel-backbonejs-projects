@@ -1,0 +1,22 @@
+<script type="text/template" id="template-pages-login">
+
+  <form action="/users/login" method="post" class="login-form">
+    <div class="content">
+      <div class="section">
+        <label class="label" for="user-name">User name/email</label>
+        <input type="text" id="user-name" name="email" value="jleigh@testcompany.com" required/>
+      </div>
+      <div class="section">
+        <label class="label" for="password">Password</label>
+        <input type="password" id="password" name="password" value="password" required/>
+      </div>
+    </div>
+    <div class="actions clearfix">
+      <div>
+        <button type="button" class="edit-button button-cancel"><span>Cancel</span></button>
+        <button type="submit" class="edit-button button-save"><span>Login</span></button>
+      </div>
+     </div>
+  </form>
+
+</script>

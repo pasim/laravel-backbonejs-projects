@@ -5,7 +5,7 @@
         <?php
         $xml = simplexml_load_string($result);
         $json = json_encode($xml);
-        var_dump($json);
+        dd(json_decode($json, true));
         ?>
     </body>
 </html>
